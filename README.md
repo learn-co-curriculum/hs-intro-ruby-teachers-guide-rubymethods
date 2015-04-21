@@ -1,4 +1,35 @@
 ### SWABTS
++ METHODS - explain what a method is and why it's used
+
++ METHODS - use built in methods for each data type and structure
+
++ METHODS - chain methods together
+
++ METHODS - experiment and investigate unknown ruby methods using documentation and other 
+
++ internet resources
+
++ METHODS - explain what a return value is and what it's used for
+
++ METHODS - explain and determine the return value of a method
+
++ METHODS - explain what the return value of the puts method is
+
++ METHODS - differentiate between methods that puts and methods that return a value
+
++ IRB - use IRB to test out ruby code
+
++ SCOPE - explain that local variables cannot work between methods because of scope
+
++ METHODS - explain the difference between defining and calling a method
+
++ METHODS - call previously defined custom methods
+
++ METHODS - create a custom method using def and end key words
+
++ METHODS - use correct syntax in naming methods
+
++ METHODS - create a custom method using arguments
 
 ### Motivation
 + Remember the cool drone we played with on day 1? We gave it commands using methods. [Show the class some of the code.] 
