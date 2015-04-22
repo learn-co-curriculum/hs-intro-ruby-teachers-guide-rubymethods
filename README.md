@@ -1,40 +1,27 @@
 ### SWABTS
-+ METHODS - explain what a method is and why it's used
+***Students will be able to create and use their own custom methods***
 
-+ METHODS - use built in methods for each data type and structure
-
-+ METHODS - chain methods together
-
-+ METHODS - experiment and investigate unknown ruby methods using documentation and other 
-
-+ internet resources
-
-+ METHODS - explain what a return value is and what it's used for
-
-+ METHODS - explain and determine the return value of a method
-
-+ METHODS - explain what the return value of the puts method is
-
-+ METHODS - differentiate between methods that puts and methods that return a value
-
-+ IRB - use IRB to test out ruby code
-
-+ SCOPE - explain that local variables cannot work between methods because of scope
-
-+ METHODS - explain the difference between defining and calling a method
-
-+ METHODS - call previously defined custom methods
-
-+ METHODS - create a custom method using def and end key words
-
-+ METHODS - use correct syntax in naming methods
-
-+ METHODS - create a custom method using arguments
+	+ METHODS - explain what a method is and why it's used
+	+ METHODS - use built in methods for each data type and structure
+	+ METHODS - chain methods together
+	+ METHODS - experiment and investigate unknown ruby methods using documentation and other 
+	+ internet resources
+	+ METHODS - explain what a return value is and what it's used for
+	+ METHODS - explain and determine the return value of a method
+	+ METHODS - explain what the return value of the puts method is
+	+ METHODS - differentiate between methods that puts and methods that return a value
+	+ IRB - use IRB to test out ruby code
+	+ SCOPE - explain that local variables cannot work between methods because of scope
+	+ METHODS - explain the difference between defining and calling a method
+	+ METHODS - call previously defined custom methods
+	+ METHODS - create a custom method using def and end key words
+	+ METHODS - use correct syntax in naming methods
+	+ METHODS - create a custom method using arguments
 
 ### Motivation
 + Remember the cool drone we played with on day 1? We gave it commands using methods. [Show the class some of the code.] 
 ```ruby
-drone.take_off
+	drone.take_off
 	sleep 5
 	drone.turn_right(1.0)
 	sleep 5
@@ -50,19 +37,21 @@ drone.take_off
 ### Lesson Plan 
 + A method is just a set of instructions that tells the computer to do something. They are awesome because they allow us to write code ONCE and then re-use it as many times as we want! 
 + Call out someone in the class and start giving them commands. Write them on the board
-	+ Close your computer
-	+ Put it in your bag
-	+ Stand up
-	+ Walk out the door
+	```
+	Close your computer
+	Put it in your bag
+	Stand up
+	Walk out the door
+	```
 + We can encompass these instructions in a method called go_home
 	+ You need to give really explicit instructions to a computer when you create a method (just like we did)
 + We use the following syntax to write a method and create a sort of code “block”:
 ```ruby
-def method_name
-	your code goes here! 
-end
+	def method_name
+		your code goes here! 
+	end
 ```
-+ We use the keyword “def” to DEFINE the method, followed by the name of the method, then some code in the middle and the keyword end to tell the computer that this method is complete.
++ We use the keyword `def` to DEFINE the method, followed by the name of the method, then some code in the middle and the keyword end to tell the computer that this method is complete.
 	+ Share an example: 
 ```ruby
 def go_home 
@@ -85,18 +74,18 @@ end
 + Enter IRB - it stands for interactive ruby
 + IRB is also an example of a REPL (read-evaluate-print-loop) something that will evaluate code and print out the results. If you’ve done Codecademy or any other similar interactive online course then you’ve used a REPL before.
 + Let’s play! Everyone open up your terminal and type in irb
-	+ Type in 1+1. What happens?
-	+ Type name = your name, then name. What happens?
-	+ The thing following => this is the return value
+	+ Type in `1+1`. What happens?
+	+ Type `name = your_name_here`, then name. What happens?
+	+ The thing following `=>` this is the return value
 	+ IRB is evaluating some code that you are giving it and sending back the value
 + Important things to remember about IRB
 	+ When you start up IRB only ruby code works (NO BASH even though you are in the terminal)
 	+ Any work you do in IRB will not be saved. You create a completely new IRB world every time you fire up IRB. 
 	+ You should think of IRB as a tool for experimenting
 + Let’s run a method in IRB. Copy and paste go_home method into IRB
-	+ Why do we get back :go_home?
+	+ Why do we get back `:go_home`?
 	+ IRB is telling us - got it, you just put in a go_home method - this method is ready for you to use
-	+ So now we can call it with ‘go_home’ - then we see our instructions print to the screen and the return value nil. What is this nil thing?
+	+ So now we can call it with `go_home` - then we see our instructions print to the screen and the return value nil. What is this nil thing?
 + A return value is always going to be the result of the last line of code in a method. So the return value of 
 ```ruby
  def go_home 
@@ -108,7 +97,7 @@ end
 end
 ```
 is nil. Why?
-+ Puts is a method - and it’s only purpose is to print something to the screen. It doesn’t evaluate anything it just prints out and returns NOTHING or nil. So the last line of our program is calling the puts method - which prints something to the screen AND returns nothing or nil
++ `puts` is a method - and it’s only purpose is to print something to the screen. It doesn’t evaluate anything it just prints out and returns NOTHING or nil. So the last line of our program is calling the puts method - which prints something to the screen AND returns nothing or nil
 + Let’s look at another example
 ```ruby
 def go_home
@@ -131,18 +120,11 @@ def say_hello
 end 
 say_hello.upcase
 ```
-+ This doesn’t work! Why do we get this error message: undefined method `upcase' for nil:NilClass
++ This doesn’t work! Why do we get this error message: `undefined method 'upcase' for nil:NilClass`
 + Because puts returns nil. How might we make this work? 
-+ There are a ton of other pre-written Ruby methods like upcase and downcase that you can use. Different methods can be used on different data types. For example, you can use upcase on a string but not an integer or a float. They can be found here in the ruby docs: http://www.ruby-doc.org/core-2.1.1/ 
++ There are a ton of other pre-written Ruby methods like upcase and downcase that you can use. Different methods can be used on different data types. For example, you can use upcase on a string but not an integer or a float. They can be found [here](http://www.ruby-doc.org/core-2.1.1/) in the ruby docs:  
 + Show class how to search for classes and methods
 + Command F
-
-Break here for a two hour class
-
-Ramp up with TODO lab that practices return values
-
-+ Introduce arguments to this class in this lesson
-+ Let’s go back to our go_home method:
 
 ```ruby
  def go_home 
@@ -173,8 +155,9 @@ end
 def say_name(name) 
 	puts “Hello #{name}!” 
 end
-And how would we call this? say_name(“Vanessa”), say_name(“Victoria”)
 ```
+And how would we call this? `say_name(“Vanessa”)`, `say_name(“Victoria”)`
+
 + When you call this method you can feed it any string that you want as the name - but remember it has to be a string.
 + Everyone open up sublime and write out this method and try calling it with different names.
 	+ Say thing from CLI
@@ -218,7 +201,7 @@ Why do we have to feed arguments into a method anyway? Why can’t we do this:
 	puts say_hello
 ```
 + Let’s try running this file. 
-+ What does this error message mean? “undefined local variable or method ‘name'”
++ What does this error message mean? `undefined local variable or method 'name'`
 + The method doesn’t recognize the variable name. That is because a method creates its own world. 
 + ***Draw circles on the board. The big circle is the program. The small circle is the method. The method is only aware of what is in the small circle.***
 + In this example the name variable lives outside of this world, so say_hello doesn’t even know it exists. Let’s try defining name inside of the method. This works!
@@ -257,3 +240,4 @@ puts “hello #{name}”
 
 
 ### Hints and Hurdles 
++ For method arguments: Ask the class "What if I told you to dye my hair, is that enough instructions for you to do anything?" - Usually students say no, they need to know what color. The color, "blue" is an argument, its the additional piece of information that could change, but is needed to complete the task
