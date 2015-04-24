@@ -69,7 +69,7 @@ end
 + We call methods by writing the method name when we want to use it. Add call to the file and run it to show the class. 
 + ***Write a few more methods with class:*** How old will I be in 10 years? What is my name spelled backwards. Change all w’s to v’s.
 * ***Break and have them write and call methods in a lab***
-	+ https://github.com/flatiron-school-curriculum/hs-ruby-2-methods-practice-lab 
+	+ https://github.com/learn-co-curriculum/hs-ruby-2-methods-practice-lab 
 + It’s been really fun writing everything out in a file and then running a file to see what happens, but wouldn’t it be nice if we could experiment without saving and re-running the file every time?
 + Enter IRB - it stands for interactive ruby
 + IRB is also an example of a REPL (read-evaluate-print-loop) something that will evaluate code and print out the results. If you’ve done Codecademy or any other similar interactive online course then you’ve used a REPL before.
@@ -179,7 +179,7 @@ end
 puts addition(2, 3)
 ```
 ***Your turn to practice with a lab!***
-https://github.com/flatiron-school-curriculum/hs-ruby-2-parrot-lab
+https://github.com/learn-co-curriculum/hs-ruby-2-parrot-lab
 + We can also set default values for our arguments like this:
 
 ```ruby
@@ -189,7 +189,7 @@ https://github.com/flatiron-school-curriculum/hs-ruby-2-parrot-lab
 ```
 + What do you think happens when I call this method with no arguments? Show the class.
 + Practice with a mini-lab 
-	+ https://github.com/flatiron-school-curriculum/hs-ruby-2-meal-choice-lab
+	+ https://github.com/learn-co-curriculum/hs-ruby-2-meal-choice-lab
 Why do we have to feed arguments into a method anyway? Why can’t we do this:
 + What if instead of feeding in an argument for name we just defined name at the top of the file. Like this:
 
