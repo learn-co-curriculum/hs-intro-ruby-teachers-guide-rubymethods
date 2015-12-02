@@ -241,3 +241,4 @@ puts “hello #{name}”
 
 ### Hints and Hurdles 
 + For method arguments: Ask the class "What if I told you to dye my hair, is that enough instructions for you to do anything?" - Usually students say no, they need to know what color. The color, "blue" is an argument, its the additional piece of information that could change, but is needed to complete the task
+<a href='https://learn.co/lessons/hs-intro-ruby-teachers-guide-rubymethods' data-visibility='hidden'>View this lesson on Learn.co</a>
